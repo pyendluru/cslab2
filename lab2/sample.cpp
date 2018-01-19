@@ -8,7 +8,7 @@ int TheTruth()
 	void* buffer;
 
 	// Allocate memory for buffer and return the pointer to that memory.
-	buffer = malloc(1 << 31);
+	buffer = malloc(1 << 2);
 
 	// Place the meaning of life into memory
 	*(int*)buffer = ( (1 << 5) + 10 ) ^ 0x04 ^ 0x04;
