@@ -29,7 +29,7 @@ std::string ReverseText(std::string & msg, int start = 0, int end = -1)
 		char hold  = msg[start];
 		msg[start] = msg[end];
 		msg[end]   = hold;
-		return ReverseText(msg, start++, end--);
+		return ReverseText(msg, ++start, --end);
 	}
 }
 
