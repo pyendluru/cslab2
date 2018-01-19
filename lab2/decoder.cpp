@@ -37,7 +37,7 @@ std::string ReverseText(std::string & msg, int start = 0, int end = -1)
 std::string DecodeText(std::string & msg)
 {
 	size_t len = msg.length();
-	for(size_t i = 0; i < len; ++i) msg[i] = msg[i] ^ 0x02;
+	for(size_t i = 0; i < len; i++) msg[i] = msg[i] ^ 0x02;
 	return msg;
 }
 
