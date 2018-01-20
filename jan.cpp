@@ -17,8 +17,9 @@ void PrintReverse(ifstream &stream, int Stringcount)
 Then it will extract first value as number of strings.
 Then finally uses the function above to print in reverse*/
 
-int main(int word, int count, char* words[])
+int main(int word, char* words[])
 {
+    int count;
     ifstream stream;
     stream.open(words[1]);         
     stream >> count;               
