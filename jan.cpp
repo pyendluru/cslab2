@@ -3,22 +3,25 @@
 using namespace std;
 
 //This function will print file with words reversed.
+
 void PrintReverse(ifstream &stream, int length)
 {
     string letters;
     stream >> letters;
-    if(length > 0)
         PrintReverse(stream, length-1);
     cout << letters << " ";  
 }
+/* The main below will first open text file from the command line.
+Then it will extract first value as number of strings.
+Then finally uses the function above to print in reverse*/
 
 int main(int word, char* words[])
 {
     ifstream stream;
-    stream.open(words[1]);   //From, the terminal will open the hw1q6.txt file
+    stream.open(words[1]);   
     int count;      
-    stream >> count;               //Will extract first value from file
-    PrintReverse(stream, count);   //The recursive function will print 
+    stream >> count;               
+    PrintReverse(stream, count); 
     cout << endl;
     return 0;
 }
