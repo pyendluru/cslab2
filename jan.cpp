@@ -3,7 +3,7 @@
 using namespace std;
 
 //This function will print file with words reversed.
-void PrintReverse(ifstream &stream, int length)
+void PrintReverse(ifstream stream, int length)
 {
     string letters;
     stream >> letters;
