@@ -20,4 +20,5 @@ int main(int word, char* words[])
     fin >> count;               //Will extract first value from file
     PrintReverse(fin, count);   //The recursive function will print 
     cout << endl;
+    return 0;
 }
