@@ -132,7 +132,7 @@ int main()
 	}
 	if(flag==0)
 		cout <<"Winner: protectors\n";
-	/*for(int i=0;i<n;i++)
+	for(int i=0;i<n;i++)
 	{
 		for(int j=0;j<m;j++)
 		{
@@ -141,6 +141,6 @@ int main()
 		}
 	}
 	delete[] protectors;
-	delete[] invaders;*/
+	delete[] invaders;
 	return 0;
 } 
